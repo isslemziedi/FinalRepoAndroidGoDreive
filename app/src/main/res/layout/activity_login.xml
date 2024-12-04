@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:padding="16dp"
+android:id="@+id/log_in"
+tools:context=".view.auth.LoginActivity">
+
+<TextView
+    android:id="@+id/titleTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:text="GoDrive TN"
+    android:textColor="@color/darkBeige"
+    android:textSize="18sp"
+    />
+
+<TextView
+    android:id="@+id/welcomeTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/titleTextView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:text="Welcome Back"
+    android:textColor="@color/darkBeige"
+    android:textSize="25sp"
+    android:textStyle="bold"/>
+
+<TextView
+    android:id="@+id/loginInstructionsTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/welcomeTextView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:text="Log in to your account using email"
+    android:textColor="@color/grey"
+    android:textSize="16sp" />
+
+<EditText
+    android:id="@+id/emailEditText"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/loginInstructionsTextView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:background="@drawable/rounded_edittext"
+    android:hint="Email"
+    android:inputType="textEmailAddress"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/grey"
+    android:drawableStart="@drawable/email_icon"
+    android:drawablePadding="10dp" />
+
+
+<EditText
+    android:id="@+id/passwordEditText"
+    android:layout_width="300dp"
+    android:layout_height="50dp"
+    android:layout_below="@id/emailEditText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/rounded_edittext"
+    android:hint="Password"
+    android:inputType="textPassword"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/grey"
+    android:drawableStart="@drawable/pwd_icon"
+    android:drawableEnd="@drawable/eye_icon"
+    android:drawablePadding="10dp" />
+
+
+<TextView
+    android:id="@+id/forgotPasswordTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/passwordEditText"
+    android:layout_alignParentEnd="true"
+    android:layout_marginTop="15dp"
+    android:text="Forgot Password?"
+    android:textColor="@color/blue"
+    android:textSize="14sp"
+    android:layout_marginEnd="40dp"/>
+
+<Button
+    android:id="@+id/loginButton"
+    android:layout_width="300dp"
+    android:layout_height="55dp"
+    android:layout_below="@id/forgotPasswordTextView"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="24dp"
+    android:text="Log In"
+    android:textColor="@color/white"
+    android:textSize="16sp"
+    android:backgroundTint="@color/darkBeige"
+
+    />
+
+<LinearLayout
+    android:id="@+id/signUpLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/loginButton"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="25dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First time here?"
+        android:textColor="@color/darkBeige"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/signUpTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Sign up"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/socialLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/signUpLayout"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="14dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or log in with"
+        android:textColor="@color/darkBeige"
+        android:textSize="16sp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleSignInButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:stateListAnimator="@null"
+        android:elevation="0dp"
+        android:textAlignment="center"/>
+
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reservation2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.components.Rev2Activity">
+
+
+    <ImageView
+        android:id="@+id/imageViewGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/titleTextView"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="29dp"
+        android:layout_toStartOf="@+id/titleTextView" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Reservaion Details"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/reservationInstructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="to submit your reservation you should"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/reservation2InstructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reservationInstructionsTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="enter your information"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reservation2InstructionsTextView"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Driver Information"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/label1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTextView"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:text="Driver Name"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+
+    <EditText
+        android:id="@+id/DriverNameEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/label1TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/driver"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+
+    <TextView
+        android:id="@+id/label2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DriverNameEditText"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <EditText
+        android:contentDescription="email ici"
+        android:id="@+id/DriverEmailEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/label2TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/email_icon"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+
+    <TextView
+        android:id="@+id/label3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DriverEmailEditText"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/DriverPhoneEditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/label3TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:drawableStart="@drawable/phone"
+        android:drawablePadding="10dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey" />
+
+    <Button
+        android:id="@+id/continue2Button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/DriverPhoneEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/darkBeige"
+        android:text="Continue"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
+

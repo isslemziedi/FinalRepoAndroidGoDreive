@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GoDriveTN</string>
+    <string name="month_prompt">Month</string>
+    <string name="year_prompt">Year</string>
+    <string name="image_content_desc">Image description goes here</string>
+
+    <string name="favorite_button_description">Ajouter aux favoris</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="default_web_client_id">501977687410-rbqromf08714758mgk6bjb0o5kdc0d2m.apps.googleusercontent.com</string>
+
+
+</resources>

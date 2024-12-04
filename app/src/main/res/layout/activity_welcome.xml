@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/welcome"
+    android:background="@color/lightBeige"
+    tools:context=".view.pages.WelcomeActivity">
+
+<TextView
+    android:id="@+id/Title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    android:text="GO DRIVE TN"
+    android:textColor="@color/darkBeige"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:layout_marginTop="30dp"/>
+
+
+<TextView
+    android:id="@+id/SousTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="Car Rental In Tunisia"
+    android:textColor="@color/black"
+    android:textSize="17sp"
+    android:textStyle="normal"
+    android:layout_marginTop="10dp"/>
+
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="600dp"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="40dp"
+    app:srcCompat="@drawable/bg2_image"/>
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="40dp"
+
+        android:backgroundTint="@color/darkBeige"
+        android:text="Rent Amazing Cars"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

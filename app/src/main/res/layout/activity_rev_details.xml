@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:id="@+id/revconfirme"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.components.RevDetailsActivity">
+
+    <ImageView
+        android:id="@+id/imageViewGoBack"
+        android:layout_width="33dp"
+        android:layout_height="27dp"
+        android:layout_above="@+id/reservationInstructionsTextView"
+        android:layout_alignTop="@+id/titleTextView"
+        android:layout_marginStart="-15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Reservation Details"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/reservationInstructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Here is  your reservation you should"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/reservation2InstructionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reservationInstructionsTextView"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="5dp"
+        android:text="Verified your informations"
+        android:textColor="@color/grey"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/labelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reservation2InstructionsTextView"
+        android:layout_marginTop="20dp"
+        android:text="Car Details"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/car_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTextView"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/beige"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="25dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_car_image"
+                    android:layout_width="140dp"
+                    android:layout_height="60dp"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/mesarati_car" />
+
+                <TextView
+                    android:id="@+id/tv_car_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@id/iv_car_image"
+                    android:text="Green Maserati MC12"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_car_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_car_title"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toEndOf="@id/iv_car_image"
+                    android:text="192 DT / Day"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/label2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_details"
+        android:layout_marginTop="15dp"
+        android:text="Renter Details"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label2TextView"
+        android:layout_marginTop="5dp"
+        android:text="Full Name: Malak Ben Othmane"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/full_name"
+        android:layout_marginTop="5dp"
+        android:text="Email: malekbenothmen70@gmail.com"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="5dp"
+        android:text="Phone Number: +216 29 581 525"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/label3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:layout_marginTop="15dp"
+        android:text="Date Details"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/datePrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label3TextView"
+        android:layout_marginTop="5dp"
+        android:text="Date of pick-up: 13/06/2003"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/dateReturn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/datePrise"
+        android:layout_marginTop="5dp"
+        android:text="Return Date: 11/03/2003"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateReturn"
+        android:layout_marginTop="5dp"
+        android:text="Time: 12PM"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/label4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time"
+        android:layout_marginTop="15dp"
+        android:text="Total Price"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/priceTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label4TextView"
+        android:layout_marginTop="5dp"
+        android:text="2190 DT"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/continue3Button"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/priceTotal"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/darkBeige"
+        android:text="Confirmer"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
